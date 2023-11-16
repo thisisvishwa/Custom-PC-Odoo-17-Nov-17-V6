@@ -1,0 +1,103 @@
+/* Pricing Table Styles */
+.pricing-table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pricing-table .pricing-header {
+    padding: 20px 0;
+    background-color: #333;
+    border-radius: 5px 5px 0 0;
+}
+
+.pricing-table .pricing-header h2 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.pricing-table .pricing-body {
+    padding: 20px;
+}
+
+.pricing-table .pricing-body .price {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.pricing-table .pricing-body .description {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #999;
+}
+
+.pricing-table .pricing-footer {
+    padding: 20px 0;
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+}
+
+.pricing-table .pricing-footer .btn {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff7f00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-table .pricing-footer .btn:hover {
+    background-color: #ff5500;
+}
+
+/* Bundle Offers Styles */
+.bundle-offers {
+    margin-top: 50px;
+}
+
+.bundle-offers .offer-card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bundle-offers .offer-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.bundle-offers .offer-card .offer-price {
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.bundle-offers .offer-card .offer-description {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #999;
+}
+
+.bundle-offers .offer-card .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff7f00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bundle-offers .offer-card .btn:hover {
+    background-color: #ff5500;
+}

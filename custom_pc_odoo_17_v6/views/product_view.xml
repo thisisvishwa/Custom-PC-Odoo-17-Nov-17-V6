@@ -1,0 +1,50 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Product form view -->
+        <record id="view_product_form" model="ir.ui.view">
+            <field name="name">product.form</field>
+            <field name="model">product.product</field>
+            <field name="arch" type="xml">
+                <form string="Product">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="category_id"/>
+                            <field name="price"/>
+                            <field name="description"/>
+                            <field name="image"/>
+                            <field name="stock_level"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Product tree view -->
+        <record id="view_product_tree" model="ir.ui.view">
+            <field name="name">product.tree</field>
+            <field name="model">product.product</field>
+            <field name="arch" type="xml">
+                <tree string="Product">
+                    <field name="name"/>
+                    <field name="category_id"/>
+                    <field name="price"/>
+                    <field name="stock_level"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Product action -->
+        <record id="action_product" model="ir.actions.act_window">
+            <field name="name">Products</field>
+            <field name="res_model">product.product</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Product menu item -->
+        <menuitem id="menu_product" name="Products" parent="custom_pc_odoo_17_v6.main_menu" action="action_product"/>
+    </data>
+</odoo>
+```

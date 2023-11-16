@@ -1,0 +1,50 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Review Form View -->
+        <record id="view_review_form" model="ir.ui.view">
+            <field name="name">review.form</field>
+            <field name="model">review.model</field>
+            <field name="arch" type="xml">
+                <form string="Review">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="product_id"/>
+                            <field name="user_id"/>
+                            <field name="rating"/>
+                            <field name="comment"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Review Tree View -->
+        <record id="view_review_tree" model="ir.ui.view">
+            <field name="name">review.tree</field>
+            <field name="model">review.model</field>
+            <field name="arch" type="xml">
+                <tree string="Review">
+                    <field name="name"/>
+                    <field name="product_id"/>
+                    <field name="user_id"/>
+                    <field name="rating"/>
+                    <field name="comment"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Review Action -->
+        <record id="action_review" model="ir.actions.act_window">
+            <field name="name">Reviews</field>
+            <field name="res_model">review.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Review Menu -->
+        <menuitem id="menu_review" name="Reviews" parent="custom_pc_odoo_17_v6.main_menu" action="action_review"/>
+    </data>
+</odoo>
+```

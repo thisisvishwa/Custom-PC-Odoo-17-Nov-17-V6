@@ -1,0 +1,6 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_product","access_product","custom_pc_odoo_17_v6.model_product","base.group_user","1","1","1","1"
+"access_pc_builder","access_pc_builder","custom_pc_odoo_17_v6.model_pc_builder","base.group_user","1","1","1","1"
+"access_pricing","access_pricing","custom_pc_odoo_17_v6.model_pricing","base.group_user","1","1","1","1"
+"access_review","access_review","custom_pc_odoo_17_v6.model_review","base.group_user","1","1","1","1"
+"access_order","access_order","custom_pc_odoo_17_v6.model_order","base.group_user","1","1","1","1"

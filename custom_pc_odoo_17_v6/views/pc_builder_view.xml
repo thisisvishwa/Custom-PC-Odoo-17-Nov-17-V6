@@ -1,0 +1,62 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- PC Builder Form View -->
+        <record id="view_pc_builder_form" model="ir.ui.view">
+            <field name="name">pc.builder.form</field>
+            <field name="model">pc.builder</field>
+            <field name="arch" type="xml">
+                <form string="PC Builder">
+                    <sheet>
+                        <group>
+                            <field name="cpu_id"/>
+                            <field name="gpu_id"/>
+                            <field name="motherboard_id"/>
+                            <field name="ram_id"/>
+                            <field name="storage_id"/>
+                            <field name="power_supply_id"/>
+                            <field name="cooling_solution_id"/>
+                            <field name="case_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- PC Builder Tree View -->
+        <record id="view_pc_builder_tree" model="ir.ui.view">
+            <field name="name">pc.builder.tree</field>
+            <field name="model">pc.builder</field>
+            <field name="arch" type="xml">
+                <tree string="PC Builder">
+                    <field name="cpu_id"/>
+                    <field name="gpu_id"/>
+                    <field name="motherboard_id"/>
+                    <field name="ram_id"/>
+                    <field name="storage_id"/>
+                    <field name="power_supply_id"/>
+                    <field name="cooling_solution_id"/>
+                    <field name="case_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- PC Builder Action -->
+        <record id="action_pc_builder" model="ir.actions.act_window">
+            <field name="name">PC Builder</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">pc.builder</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Start building your custom PC here.
+                </p>
+            </field>
+        </record>
+
+        <!-- PC Builder Menu -->
+        <menuitem id="menu_pc_builder" name="PC Builder" action="action_pc_builder" sequence="10"/>
+    </data>
+</odoo>
+```
