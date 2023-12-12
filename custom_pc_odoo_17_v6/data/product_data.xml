@@ -1,0 +1,28 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Product Categories -->
+        <record id="product_category_cpu" model="product.category">
+            <field name="name">CPU</field>
+        </record>
+        <record id="product_category_gpu" model="product.category">
+            <field name="name">GPU</field>
+        </record>
+        <!-- ... other product categories ... -->
+
+        <!-- Sample Products -->
+        <record id="product_cpu_1" model="product.product">
+            <field name="name">Intel Core i7</field>
+            <field name="categ_id" ref="product_category_cpu"/>
+            <!-- ... other product fields ... -->
+        </record>
+        <record id="product_gpu_1" model="product.product">
+            <field name="name">NVIDIA GeForce RTX 3080</field>
+            <field name="categ_id" ref="product_category_gpu"/>
+            <!-- ... other product fields ... -->
+        </record>
+        <!-- ... other products ... -->
+    </data>
+</odoo>
+```

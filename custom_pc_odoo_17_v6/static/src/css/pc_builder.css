@@ -1,0 +1,79 @@
+/* custom_pc_odoo_17_v6/static/src/css/pc_builder.css */
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.pc-builder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.pc-builder .step {
+    margin-bottom: 20px;
+}
+
+.pc-builder .step .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pc-builder .step .components {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pc-builder .step .components .component {
+    width: 45%;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.pc-builder .step .components .component:hover {
+    border-color: #00ff00;
+}
+
+.pc-builder .step .components .component .name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pc-builder .step .components .component .specs {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.pc-builder .step .components .component .compatibility {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #00ff00;
+}
+
+.pc-builder .step .components .component .compatibility.incompatible {
+    color: #ff0000;
+}
+
+.pc-builder .summary {
+    margin-top: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+}
+
+.pc-builder .summary .total {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .pc-builder .step .components .component {
+        width: 100%;
+    }
+}

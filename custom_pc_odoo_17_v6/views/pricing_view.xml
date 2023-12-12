@@ -1,0 +1,57 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Pricing List View -->
+        <record id="view_pricing_tree" model="ir.ui.view">
+            <field name="name">pricing.tree</field>
+            <field name="model">custom_pc_odoo_17_v6.pricing</field>
+            <field name="arch" type="xml">
+                <tree string="Pricing">
+                    <field name="product_id"/>
+                    <field name="price"/>
+                    <field name="discount"/>
+                    <field name="bundle_offer"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Pricing Form View -->
+        <record id="view_pricing_form" model="ir.ui.view">
+            <field name="name">pricing.form</field>
+            <field name="model">custom_pc_odoo_17_v6.pricing</field>
+            <field name="arch" type="xml">
+                <form string="Pricing">
+                    <sheet>
+                        <group>
+                            <field name="product_id"/>
+                            <field name="price"/>
+                            <field name="discount"/>
+                            <field name="bundle_offer"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Pricing Action -->
+        <record id="action_pricing" model="ir.actions.act_window">
+            <field name="name">Pricing</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">custom_pc_odoo_17_v6.pricing</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Pricing
+                </p>
+                <p>
+                    Add pricing details for the products.
+                </p>
+            </field>
+        </record>
+
+        <!-- Pricing Menu -->
+        <menuitem id="menu_pricing" name="Pricing" parent="custom_pc_odoo_17_v6.menu_custom_pc" sequence="3" action="action_pricing"/>
+    </data>
+</odoo>
+```
